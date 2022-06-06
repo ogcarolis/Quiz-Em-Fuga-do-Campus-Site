@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Quiz: Em fuga do campus</title>
+  <link href="../css/style.css" rel="stylesheet" type="text/css"/>
+  <link rel="shortcut icon" href="../img/cranio.png">
+</head>
+
+<body>  
+    <div id="perguntas">
+        <div id="progresso">
+            <div id="timer">⠀⠀⠀⠀⠀⠀⠀⠀⠀</div>
+        </div>
+        <div class="questoes" id="questao1">
+            <div class="texto">
+                <p>Questão 1. 
+                    Você está na biblioteca e precisa fugir, a chave se encontra dentro do livro em que o 
+                    personagem principal mora no esgoto e gosta de brincar com as crianças. Qual dos livros 
+                    você escolhe?</p>
+            </div>
+            <div class="divs-abaixo">
+                <div class="botoesAl">
+                    <button class="alternativas" id="umA" value="0" onclick="verificar('umA', 1)">a.     Cemitério Maldito</button>
+                    <button class="alternativas" id="umB" value="1" onclick="verificar('umB', 1)">b.     It a coisa</button>
+                    <button class="alternativas" id="umC" value="0" onclick="verificar('umC', 1)">c.     O Iluminado</button>
+                    <button class="alternativas" id="umD" value="0" onclick="verificar('umD', 1)">d.     A torre negra</button>
+                </div>
+
+                <div class="imgQuestoes" id="imgQuestao1"></div>
+            </div>
+            
+        </div>
+
+        <div class="questoes" id="questao2">
+            <div class="texto">
+                <p> Questão 2.
+                    Saindo da biblioteca você chega na praça, você tem que achar um instrumento de localização, 
+                    qual desses é uma representação gráfica de um local, geralmente visto por cima?</p>
+            </div>
+
+            <div class="divs-abaixo">
+                <div class="botoesAl">
+                    <button class="alternativas" id="doisA" value="0" onclick="verificar('doisA', 2)">a.     Bússola</button>
+                    <button class="alternativas" id="doisB" value="0" onclick="verificar('doisB', 2)">b.     Rosa dos Ventos</button>
+                    <button class="alternativas" id="doisC" value="0" onclick="verificar('doisC', 2)">c.     Constelação</button>
+                    <button class="alternativas" id="doisD" value="1" onclick="verificar('doisD', 2)">d.     Mapa</button>
+                </div>
+
+                <div class="imgQuestoes" id="imgQuestao2"></div>
+            </div>
+        </div>
+        
+        <div class="questoes" id="questao3">
+            <div class="texto">
+                <p>Questão 3.
+                    O mapa te leva para uma sala de aula que, na lousa está escrita a seguinte charada: 
+                    “Tenho apenas uma cor, mas posso ter vários tamanhos. Estou presente quando faz sol. Na chuva, 
+                    jamais! Passo todo o tempo no chão, mas nunca fico sujo. Não faço mal algum e não posso sentir dor.”. 
+                    Descubra a resposta que te ajudará a sair da sala:</p>
+            </div>
+
+            <div class="divs-abaixo">
+                <div class="botoesAl">
+                    <button class="alternativas" id="tresA" value="0" onclick="verificar('tresA', 3)">a.     A água</button>
+                    <button class="alternativas" id="tresB" value="1" onclick="verificar('tresB', 3)">b.     A sombra</button>
+                    <button class="alternativas" id="tresC" value="0" onclick="verificar('tresC', 3)">c.     As formigas</button>
+                    <button class="alternativas" id="tresD" value="0" onclick="verificar('tresD', 3)">d.     A poeira</button>            
+                </div>
+
+                <div class="imgQuestoes" id="imgQuestao3"></div>
+            </div>
+        </div>
+        
+        <div class="questoes" id="questao4">
+            <div class="texto">
+                <p>Questão 4.
+                    Abrindo a porta que te leva para o corredor, você avista um quadro de recados com um 
+                    único bilhete fixado, resolva-o para encontrar a próxima sala: A(22 * 5 + 6), baseado no resultado é</p>
+            </div>
+
+            <div class="divs-abaixo">
+                <div class="botoesAl">
+                    <button class="alternativas" id="quatroA" value="1" onclick="verificar('quatroA', 4)">a.     A116</button>
+                    <button class="alternativas" id="quatroB" value="0" onclick="verificar('quatroB', 4)">b.     A242</button>
+                    <button class="alternativas" id="quatroC" value="0" onclick="verificar('quatroC', 4)">c.     A132</button>
+                    <button class="alternativas" id="quatroD" value="0" onclick="verificar('quatroD', 4)">d.     A220</button>
+                </div>
+                <div class="imgQuestoes" id="imgQuestao4"></div>
+            </div>
+        </div>
+
+        <div class="questoes" id="questao5">
+            <div class="texto">
+                <p>Questão 5.
+                    Nesta sala tem vários rostos estampados em quadros, e atrás de apenas um, encontra-se 
+                    uma chave que abre apenas as portas das quadras poliesportivas. O quadro em que a chave se encontra 
+                    possui esta silhueta: </p>
+                    <div id="imagemq5"></div>
+            </div>
+
+            <div class="divs-abaixo">
+                <div class="botoesAl">
+                    <button class="alternativas" id="cincoA" value="0" onclick="verificar('cincoA', 5)">
+                        a.    
+                        <div class="imagensq5" id="q5a"></div>
+                    </button>
+        
+                    <button class="alternativas" id="cincoB" value="1" onclick="verificar('cincoB', 5)">
+                        b.    
+                        <div class="imagensq5" id="q5b"></div>
+                    </button>
+        
+                    <button class="alternativas" id="cincoC" value="0" onclick="verificar('cincoC', 5)">
+                        c.    
+                        <div class="imagensq5" id="q5c"></div>
+                    </button>
+        
+                    <button class="alternativas" id="cincoD" value="0" onclick="verificar('cincoD', 5)">
+                        d.    
+                        <div class="imagensq5" id="q5d"></div>
+                    </button>
+                </div>
+                <div class="imgQuestoes" id="imgQuestao5"></div>
+            </div>     
+        </div>
+
+        <div class="questoes" id="questao6">
+            <div class="texto">
+                <p>Questão 6.
+                    Chegando na quadra poliesportiva têm as regras da competição de triatlo e, ao descobrir quais são as 
+                    modalidades praticadas nessa competição, você descobre onde ir para encontrar as respostas de como 
+                    fugir. Quais são as modalidades praticadas (Com a ordem correta)?</p>
+            </div>
+
+            <div class="divs-abaixo">
+                <div class="botoesAl">
+                    <button class="alternativas" id="seisA" value="1" onclick="verificar('seisA', 6)">a.     Natação, Ciclismo e Corrida</button>
+                    <button class="alternativas" id="seisB" value="0" onclick="verificar('seisB', 6)">b.     Ciclismo, Ginástica e Basquete</button>
+                    <button class="alternativas" id="seisC" value="0" onclick="verificar('seisC', 6)">c.     Ginástica, Ciclismo e Basquete</button>
+                    <button class="alternativas" id="seisD" value="0" onclick="verificar('seisD', 6)">d.     Corrida, Natação e Ciclismo</button>
+                </div>
+                <div class="imgQuestoes" id="imgQuestao6"></div>
+            </div>
+        </div>
+
+        <div class="questoes" id="questao7">
+            <div class="texto">
+                <p>Questão 7.
+                    Saindo da Quadra você encontra a câmera que a pergunta anterior te direcionou mostrando dentro da 
+                    caixa d’água que terá escrito a resposta de onde fica uma entrada secreta para o estacionamento 
+                    abandonado, se você evaporar um pouco da água será possível ler, do lado dessa câmera tem um controlador 
+                    de temperatura da água com essas opções, e te deixa com o questionamento: em que temperatura a água 
+                    evapora?</p>
+            </div>
+
+            <div class="divs-abaixo">
+                <div class="botoesAl">
+                    <button class="alternativas" id="seteA" value="1" onclick="verificar('seteA', 7)">a.     100ºC</button>
+                    <button class="alternativas" id="seteB" value="0" onclick="verificar('seteB', 7)">b.     80ºC</button>
+                    <button class="alternativas" id="seteC" value="0" onclick="verificar('seteC', 7)">c.     90ºC</button>
+                    <button class="alternativas" id="seteD" value="0" onclick="verificar('seteD', 7)">d.     95ºC</button>
+                </div>
+                <div class="imgQuestoes" id="imgQuestao7"></div>
+            </div>
+        </div>
+
+        <div class="questoes" id="questao8">
+            <div class="texto">
+                <p>Questão 8.
+                    O que estava escrito era: o auditório, porém no caminho para ele você encontra um portão que te 
+                    impossibilita de passar, e está escrito que a senha para esse portão é a junção de 4 números que 
+                    formam a palavra GATE, quais são?</p>
+                    <div id="imagemq8"></div>
+            </div>
+
+            <div class="divs-abaixo">
+                <div class="botoesAl">
+                    <button class="alternativas" id="oitoA" value="0" onclick="verificar('oitoA', 8)">a.     3177</button>
+                    <button class="alternativas" id="oitoB" value="0" onclick="verificar('oitoB', 8)">b.     3368</button>
+                    <button class="alternativas" id="oitoC" value="0" onclick="verificar('oitoC', 8)">c.     2587</button>
+                    <button class="alternativas" id="oitoD" value="1" onclick="verificar('oitoD', 8)">d.     3172</button>
+                </div>
+                <div class="imgQuestoes" id="imgQuestao8"></div>
+            </div>
+        </div>
+
+        <div class="questoes" id="questao9">
+            <div class="texto">
+                <p>Questão 9.
+                    No auditório está passando um filme e você precisa adivinhar qual que é para saber onde fica a porta 
+                    para a entrada secreta do estacionamento abandonado, a sinopse do filme é:<br> 
+                    “Um jovem programador é atormentado por estranhos pesadelos nos quais sempre está conectado 
+                    por cabos a um imenso sistema de computadores do futuro. À medida que o sonho se repete, ele começa 
+                    a levantar dúvidas sobre a realidade.” Qual é o filme?</p>
+            </div>
+
+            <div class="divs-abaixo">
+                <div class="botoesAl">
+                    <button class="alternativas" id="noveA" value="0" onclick="verificar('noveA', 9)">a.     Jogador Nº1</button>
+                    <button class="alternativas" id="noveB" value="0" onclick="verificar('noveB', 9)">b.     Código para o Inferno</button>
+                    <button class="alternativas" id="noveC" value="1" onclick="verificar('noveC', 9)">c.     Matrix</button>
+                    <button class="alternativas" id="noveD" value="0" onclick="verificar('noveD', 9)">d.     O Jogo da Imitação</button>
+                </div>
+
+                <div class="imgQuestoes" id="imgQuestao9"></div>
+            </div>
+        </div>
+
+        <div class="questoes" id="questao10">
+            <div class="texto">
+                <p>Questão 10.
+                    Falta pouco! No estacionamento abandonado só falta encontrar uma chave que está embaixo de um carro 
+                    que é a réplica perfeita de um carro famoso do mundo do entretenimento, este carro é utilizado para 
+                    levar um dos super-heróis mais famosos do mundo, que carro é?</p>
+            </div>
+
+            <div class="divs-abaixo">
+                <div class="botoesAl">
+                    <button class="alternativas" id="dezA" value="0" onclick="verificar('dezA', 10)">a.     DeLorean</button>
+                    <button class="alternativas" id="dezB" value="0" onclick="verificar('dezB', 10)">b.     1963 Volkswagen Fusca</button>
+                    <button class="alternativas" id="dezC" value="1" onclick="verificar('dezC', 10)">c.     O Batmóvel</button>
+                    <button class="alternativas" id="dezD" value="0" onclick="verificar('dezD', 10)">d.     Ghostbusters Ecto-1</button>
+                </div>
+                
+                <div class="imgQuestoes" id="imgQuestao10"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="gameover">
+        <div id="imgGameOver"></div>
+        <button class="botoesinicio" id="botaoReiniciar" onclick="atualizarpag('jogar')">Reiniciar</button>
+        <button class="botoesinicio" id="botaoVoltar" onclick="atualizarpag('../inicial')">Voltar</button>
+    </div>
+
+    <div id="fimJogo">
+        <div id="imgFimJogo"></div>
+        <p id="pontos"></p>
+        <div id="botoesfim">
+            <button class="botoesTelaFinal" id="botaoNovoJogo" onclick="atualizarpag('jogar')">Novo Jogo</button>
+            <button class="botoesTelaFinal" id="botaoInicio" onclick="atualizarpag('../inicial')">Início</button>
+        </div>
+    </div>
+    
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
