@@ -448,3 +448,8 @@ body{
 }
 
 /*FIM DO CSS DOS CREDITOS*/
+
+#player {
+  position: absolute;
+  opacity: 0;
+}

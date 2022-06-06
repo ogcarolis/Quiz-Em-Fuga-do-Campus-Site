@@ -9,7 +9,10 @@
   <link rel="shortcut icon" href="../img/cranio.png">
 </head>
 
-<body>  
+<body>
+    <audio id="player" autoplay="autoplay" controls="controls">
+        <source src="../audio/ambientacaosuspense.mp3" type="audio/mp3" />
+    </audio>  
     <div id="perguntas">
         <div id="progresso">
             <div id="timer">⠀⠀⠀⠀⠀⠀⠀⠀⠀</div>
@@ -233,7 +236,7 @@
     <div id="gameover">
         <div id="imgGameOver"></div>
         <button class="botoesinicio" id="botaoReiniciar" onclick="atualizarpag('jogar')">Reiniciar</button>
-        <button class="botoesinicio" id="botaoVoltar" onclick="atualizarpag('../inicial')">Voltar</button>
+        <button class="botoesinicio" id="botaoVoltar" onclick="atualizarpag('../index')">Voltar</button>
     </div>
 
     <div id="fimJogo">
@@ -241,7 +244,7 @@
         <p id="pontos"></p>
         <div id="botoesfim">
             <button class="botoesTelaFinal" id="botaoNovoJogo" onclick="atualizarpag('jogar')">Novo Jogo</button>
-            <button class="botoesTelaFinal" id="botaoInicio" onclick="atualizarpag('../inicial')">Início</button>
+            <button class="botoesTelaFinal" id="botaoInicio" onclick="atualizarpag('../index')">Início</button>
         </div>
     </div>
     

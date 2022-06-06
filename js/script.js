@@ -39,7 +39,7 @@ function questoes(num){
 function move() {
   if (i == 0) {
     i = 1;
-    var id = setInterval(frame, 1000);
+    var id = setInterval(frame, 2000);
     function frame() {
         width--;
         timer.style.width = width + "%";
