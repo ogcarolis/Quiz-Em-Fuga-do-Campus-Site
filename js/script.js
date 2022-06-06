@@ -69,7 +69,6 @@ function verificar(alternativa, questao){
 
         if(errou == 0){
             pontos++;
-            width = width + 1;
         }
         
         errou = 0;
